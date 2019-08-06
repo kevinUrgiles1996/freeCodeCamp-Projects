@@ -1,0 +1,109 @@
+body {
+    background: #A9D7D1;
+    font-family: 'Raleway', Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container {
+    background: #FAFAFA;
+    width: 75%;
+    max-width: 900px;
+    margin: 25px auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2.5px 4px 5px rgb(78, 75, 75);
+}
+
+#description {
+    text-align: center;
+}
+
+#survey-form {
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+label,
+p {
+    text-align: right;
+}
+
+input,
+select,
+textarea {
+    margin-left: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 200px;
+    height: 25px;
+}
+
+select {
+    width: 200px;
+    height: 25px;
+}
+
+.rowTab {
+    grid-column: span 2;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+
+#submit {
+    grid-column: span 2;
+    margin: 10px auto;
+    background-color: #59ace0;
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
+    height: 40px;
+    width: 96px;
+    border: 0px solid;
+}
+
+#submit:hover {
+    background-color: #1d577a;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .rowTab>* {
+        text-align: left;
+        grid-column: span 2;
+        margin-bottom: 5px;
+    }
+
+    input,
+    select,
+    textarea {
+        margin-left: 0px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+        width: 95%;
+        height: 25px;
+    }
+
+    #submit {
+        text-align: center;
+    }
+
+}
