@@ -1,0 +1,47 @@
+body {
+    background: #EEEEEE;
+    font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+    text-align: center;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 1.4rem 0;
+}
+
+#img-div {
+    background: white;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+#image {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+#tribute-info {
+    max-width: 70%;
+    margin: 50px auto;
+}
+
+ul {
+    text-align: justify;
+    max-width: 550px;
+    margin: 0 auto 50px auto;
+    line-height: 1.6;
+}
+
+ul li {
+    margin: 15px 0;
+}
+
+blockquote {
+    margin-bottom: 25px;
+}
