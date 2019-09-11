@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+header {
+  color: black;
+  font-size: 1.8em;
+  padding: 15px 0;
+}
+
+p {
+  text-align: justify;
+  margin: 10px 0;
+  color: rgb(77, 78, 83);
+}
+
+#navbar {
+  height: 100%;
+  min-width: 290px;
+  position: fixed;
+  border-right: 3px solid rgb(77, 78, 83);
+}
+
+.documentation-name {
+  height: 7%;
+  padding: 15px 25px;
+  font-size: 1.8em;
+}
+
+.nav-links {
+  width: 100%;
+  height: 93%;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-links li {
+  height: 50px;
+  list-style-type: none;
+}
+
+.nav-links li a {
+  border-top: 1px solid #333;
+  text-decoration: none;
+  color: rgb(77, 78, 83);
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 25px;
+}
+
+#main-doc {
+  margin-left: 300px;
+  height: 100%;
+  padding: 10px 40px;
+}
+
+#main-doc ul li {
+  margin: 20px 50px 0;
+  color: rgb(77, 78, 83);
+}
+
+code {
+  display: block;
+  margin-left: 25px;
+  padding: 10px;
+  background: #f7f7f7;
+  word-break: normal;
+  word-wrap: normal;
+}
+
+@media only screen and (max-width: 800px) {
+  #navbar {
+    display: none;
+  }
+
+  #main-doc {
+    margin-left: 0;
+  }
+}
