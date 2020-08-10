@@ -1,0 +1,29 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.editor-card {
+  width: 50%;
+  margin: 20px auto;
+}
+
+.previewer-card {
+  width: 75%;
+  margin: 0 auto;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 7px;
+}
+
+/* 850px */
+
+@media only screen and (max-width: 850px) {
+  .editor-card,
+  .previewer-card {
+    width: 100%;
+  }
+}
