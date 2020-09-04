@@ -1,17 +1,18 @@
 import React from 'react'
 
-const SpecialButton = ({ id, value, setDisplayDecimal }) => {
-  const setDecimal = (event) => {
-    const { value } = event.target;
-    setDisplayDecimal(value);
+const SpecialButton = ({ id, value, buttonType, handleButton }) => {
+
+  const handleClick = () => {
+    handleButton();
   }
+
   return (
     <input
       id={id}
-      type='button'
-      onClick={setDecimal}
+      onClick={handleClick}
       value={value}
-      className='pure-u-1-2 pure-button'
+      type='button'
+      className={'pure-u-1-4 pure-button large-button ' + buttonType}
     />
   )
 }
